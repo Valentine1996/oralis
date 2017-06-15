@@ -1,0 +1,478 @@
+/* BEGIN of CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* END of CSS RESET */
+
+button:hover,
+           input:hover,
+           select:hover {
+               opacity: 0.8;
+           }
+
+strong {
+    font-weight: 500;
+}
+
+em {
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*--- Fonts --*/
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('fonts/Myriad Pro/MyriadPro-Regular.eot');
+    src: url('fonts/Myriad Pro/MyriadPro-Regular.woff2') format('woff2'),
+    url('fonts/Myriad Pro/MyriadPro-Regular.woff') format('woff'),
+    url('fonts/Myriad Pro/MyriadPro-Regular.ttf') format('truetype'),
+    url('fonts/Myriad Pro/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+    url('fonts/Myriad Pro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica-Regular';
+    src: url('/fonts/Helvetica/HelveticaNeueCyr-Roman.eot');
+    src: url('/fonts/Helvetica/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Roman.woff') format('woff'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Roman';
+}
+
+
+@font-face {
+    font-family: 'Helvetica-Light';
+    src: url('/fonts/Helvetica/HelveticaNeueCyr-Light.eot');
+    src: url('/fonts/Helvetica/HelveticaNeueCyr-Light.woff2') format('woff2'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Light.woff') format('woff'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Light.ttf') format('truetype'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light') format('svg'),
+    url('/fonts/Helvetica/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--- Main CSS --*/
+
+body {
+    font-family: "MyriadPro-Regular";
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #FFFFFF;
+}
+/*--- Header --*/
+header {
+    background: url("img/layer-2.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 14px;
+}
+
+#logo{
+    float: left;
+}
+
+span#motto {
+    float: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 36px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav.navbar {
+    margin-bottom: 0;
+}
+.navigation {
+    margin-top: 105px;
+    padding-bottom: 25px;
+}
+
+.navig-underscore {
+    border-bottom: solid 1px rgba(255,255,255, 0.55);
+    width: 100%;
+}
+
+#bootstrap-button {
+    background-color: white;
+    border: solid 1px black;
+}
+
+#bootstrap-button span {
+    background-color: black;
+}
+
+.navigation ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0;
+}
+
+/*--- SECTION Welcome --*/
+
+#welcome {
+    background-color: skyblue;
+}
+
+.greeting {
+    margin: 95px 10px 0 25px;
+
+}
+
+.greeting h1 {
+    font-family: "MyriadPro-Regular";
+    font-size: 36px;
+}
+
+.greeting p {
+    font-family: "Helvetica-Light";
+    font-size: 16px;
+}
+
+div.greeting p:first-of-type {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.image-layout {
+    position: relative;
+
+}
+#talent {
+    position: absolute;
+    left: -65px;
+    top: -37px;
+    bottom: 0;
+}
+
+#welcome .contact {
+    margin-top: 180px;
+    margin-bottom: 50px;
+    padding-left: 235px;
+    float: left;
+}
+
+.contact {
+    font-family: "Helvetica-Light";
+    font-size: 16px;
+    font-weight: 300;
+
+}
+.contact-padding {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contact-data {
+    color: #FFFFFF;
+    font-family: "Helvetica-Regular";
+    font-size: 16px;
+    font-weight: 700;
+
+    border-bottom: solid ;
+}
+
+/*--- SECTION MAIN-INFO --*/
+.one-fifth {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+#main-info {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+#main-info .one-fifth {
+    padding-right: 25px;
+}
+
+#main-info div .one-fifth:last-child {
+    padding-right: 0;
+}
+
+#main-info.one-fifth.info {
+    margin-top: 22px;
+}
+
+#main-info .one-fifth .info h2 {
+    font-size: 26px;
+    color: #767978;
+    font-weight: 400;
+}
+
+#main-info .one-fifth .info p {
+    margin-top: 15px;
+    font-family: "Helvetica-Light";
+    color: #767978;
+    font-size: 14px;
+}
+
+.read-more {
+    font-family: "Helvetica-Regular";
+    font-size: 14px;
+    color: #125464;
+    text-decoration: underline;
+}
+
+/*--- SECTION Future --*/
+#future-news {
+    background-color: #e7eceb;
+    box-shadow: inset 0 3px 6px rgba(35, 31, 32, 0.2);
+    padding-bottom: 50px;
+}
+
+#future-news .one-fifth {
+    padding-right: 25px;
+}
+
+#future-news div .one-fifth:last-child {
+    padding-left: 0;
+    padding-right:0;
+}
+
+#future-news .content {
+    margin-top: 30px;
+}
+
+#future-news .content .info {
+    margin-top: 30px;
+}
+
+#future-news .info h2 {
+    color: #767978;
+    font-family: "MyriadPro-Regular";
+    font-size: 26px;
+    font-weight: normal;
+}
+
+#future-news .info p {
+    margin-top: 15px;
+    color: #767978;
+    font-family: "Helvetica-Regular";
+    font-size: 14px;
+    font-weight: 300;
+}
+
+img#test-tube {
+    height: 231px;
+}
+
+    /*--- FOOTER --*/
+footer {
+    background-color: #767978;
+}
+
+footer .content {
+    margin-top: 40px;
+}
+footer .content h2 {
+    margin-bottom: 25px;
+    font-family: "MyriadPro-Regular";
+    font-size: 26px;
+    font-weight: normal;
+}
+
+footer .content p {
+    font-family: "Helvetica-Regular";
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+footer .content div.reference-video:first-child {
+    padding-top: 0;
+}
+
+footer .content div.reference-video:last-child {
+    border-bottom: 0;
+}
+
+footer .reference-video {
+    padding: 15px 0 15px 10px;
+    border-bottom: solid 1px rgba(255,255,255,0.55);
+}
+
+footer .reference-video a {
+    font-family: "Helvetica-Regular";
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+footer .read-more {
+    font-family: "Helvetica-Regular";
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:1024px) {
+    .one-fifth {
+        width: 50%;
+        text-align: center;
+        margin-top: 20px;
+        padding-left: 20px;
+        pading-right: 20px;
+    }
+
+    #talent {
+        position: absolute;
+        left: -65px;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .one-fifth {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #talent {
+        position: absolute;
+        left: -65px;
+        top: 0;
+        bottom: 0;
+    }
+
+    #myNavbar ul li {
+        width: 100%;
+        margin: 5px 0 5px 10px;
+    }
+
+    footer .content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
