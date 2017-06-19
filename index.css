@@ -126,6 +126,11 @@ img {
     max-width: 100%;
 }
 
+@media (min-width: 1190px) {
+    .container {
+        width: 1190px;
+    }
+}
 
 /*--- Fonts --*/
 @font-face {
@@ -181,9 +186,10 @@ body {
 }
 /*--- Header --*/
 header {
-    background: url("img/layer-2.jpg") no-repeat;
-    background-size: cover;
     padding-top: 14px;
+    background-image: url("img/layer-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #logo{
@@ -211,11 +217,6 @@ nav.navbar {
     padding-bottom: 25px;
 }
 
-.navig-underscore {
-    border-bottom: solid 1px rgba(255,255,255, 0.55);
-    width: 100%;
-}
-
 #bootstrap-button {
     background-color: white;
     border: solid 1px black;
@@ -234,12 +235,40 @@ nav.navbar {
 /*--- SECTION Welcome --*/
 
 #welcome {
-    background-color: skyblue;
 }
 
-.greeting {
-    margin: 95px 10px 0 25px;
+.welcome-wrapper {
+    margin: 0 15px;
+    border-top: solid 1px rgba(255,255,255, 0.55);
+}
 
+#welcome .left-side {
+    float: left;
+    display: inline-block;
+}
+
+#welcome .left-side .greeting {
+    max-width: 505px;
+    margin: 93px 0 0 0;
+}
+
+#welcome .center-block {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    vertical-align: bottom;
+    margin: -25px 0 0 0;
+}
+
+#welcome .right-side {
+    float: right;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+#welcome .right-side .contact {
+    max-width: 315px;
+    margin: 175px 0 0 0px;
 }
 
 .greeting h1 {
@@ -262,18 +291,9 @@ div.greeting p:first-of-type {
 
 }
 #talent {
-    position: absolute;
-    left: -65px;
-    top: -37px;
-    bottom: 0;
+    margin: 0 -15px;
 }
 
-#welcome .contact {
-    margin-top: 180px;
-    margin-bottom: 50px;
-    padding-left: 235px;
-    float: left;
-}
 
 .contact {
     font-family: "Helvetica-Light";
@@ -300,19 +320,13 @@ div.greeting p:first-of-type {
     float: left;
     width: 20%;
     position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #main-info {
     margin-top: 35px;
     margin-bottom: 15px;
-}
-
-#main-info .one-fifth {
-    padding-right: 25px;
-}
-
-#main-info div .one-fifth:last-child {
-    padding-right: 0;
 }
 
 #main-info.one-fifth.info {
@@ -323,6 +337,7 @@ div.greeting p:first-of-type {
     font-size: 26px;
     color: #767978;
     font-weight: 400;
+    margin: 15px 0 0 0;
 }
 
 #main-info .one-fifth .info p {
@@ -344,15 +359,6 @@ div.greeting p:first-of-type {
     background-color: #e7eceb;
     box-shadow: inset 0 3px 6px rgba(35, 31, 32, 0.2);
     padding-bottom: 50px;
-}
-
-#future-news .one-fifth {
-    padding-right: 25px;
-}
-
-#future-news div .one-fifth:last-child {
-    padding-left: 0;
-    padding-right:0;
 }
 
 #future-news .content {
@@ -476,3 +482,33 @@ footer .read-more {
     }
 }
 
+@media screen and (max-width:320px) {
+    .one-fifth {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #talent {
+        position: absolute;
+        left: -65px;
+        top: 0;
+        bottom: 0;
+    }
+
+    #myNavbar ul li {
+        width: 100%;
+        margin: 5px 0 5px 10px;
+    }
+
+    footer .content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1189px) {
+
+}
